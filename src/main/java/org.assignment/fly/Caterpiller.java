@@ -1,6 +1,6 @@
 package org.assignment.fly;
 
-import org.Animal;
+import org.assignment.Animal;
 
 public class Caterpiller extends Animal {
 
