@@ -1,6 +1,5 @@
 package org.assignment.bird;
 
-import org.assignment.bird.Bird;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -41,7 +40,6 @@ public class BirdTest {
     public void testSing() throws java.io.IOException {
         OutputStream os = new ByteArrayOutputStream();
         os.write("Testing Sing.".getBytes());
-        PrintStream stream = new PrintStream(os, true);
 
         Bird bird = new Bird(true, "Test");
         bird.sing();

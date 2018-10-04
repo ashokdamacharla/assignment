@@ -16,6 +16,13 @@ public class Animal {
         this.sound = sound;
     }
 
+    public Animal(boolean isFlying, boolean isWalking, boolean isSinging, boolean isSwimming) {
+        this.isFlying = isFlying;
+        this.isWalking = isWalking;
+        this.isSinging = isSinging;
+        this.isSwimming = isSwimming;
+    }
+
     public Animal() { }
 
     public void fly() {
