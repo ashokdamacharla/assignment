@@ -1,4 +1,4 @@
-package org.org.assignment.fish;
+package org.assignment.fish;
 
 import org.assignment.fish.Fish;
 import org.assignment.fish.Shark;

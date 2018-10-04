@@ -1,4 +1,4 @@
-package org.org.assignment.fish;
+package org.assignment.fish;
 
 import org.assignment.fish.ClownFish;
 import org.junit.jupiter.api.Test;
