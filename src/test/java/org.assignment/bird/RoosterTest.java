@@ -6,16 +6,14 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class DuckTest {
+public class RoosterTest {
 
     @Test
     public void testSound() {
-        Duck duck = new Duck();
-        duck.sing();
-        assertThat(duck.isSinging(), is(equalTo(true)));
-        assertThat(duck.getSound(), is(equalTo("Quack, quack")));
-        duck.swim();
-        assertThat(duck.isSwimming(), is(equalTo(true)));
+        Rooster rooster = new Rooster();
+        rooster.sing();
+        assertThat(rooster.isSinging(), is(equalTo(true)));
+        assertThat(rooster.getSound(), is(equalTo("Cock-a-doodle-doo")));
     }
 
 }

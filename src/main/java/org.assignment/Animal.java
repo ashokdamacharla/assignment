@@ -6,24 +6,17 @@ public class Animal {
     private boolean isWalking;
     private boolean isSinging;
     private boolean isSwimming;
-
     private String sound;
-
-    public Animal(boolean isFlying, boolean isWalking, boolean isSinging, boolean isSwimming) {
-        this.isFlying = isFlying;
-        this.isWalking = isWalking;
-        this.isSinging = isSinging;
-        this.isSwimming = isSwimming;
-    }
 
     public Animal(boolean isFlying, boolean isWalking, boolean isSinging, boolean isSwimming, String sound) {
         this.isFlying = isFlying;
         this.isWalking = isWalking;
         this.isSinging = isSinging;
         this.isSwimming = isSwimming;
-
         this.sound = sound;
     }
+
+    public Animal() { }
 
     public void fly() {
         if(isFlying()) {
