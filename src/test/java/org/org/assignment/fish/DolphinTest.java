@@ -1,4 +1,4 @@
-package org.assistance.fish;
+package org.org.assignment.fish;
 
 import org.assignment.fish.Dolphin;
 import org.junit.jupiter.api.Test;

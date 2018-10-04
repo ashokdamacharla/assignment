@@ -1,7 +1,6 @@
-package org.assistance.fish;
+package org.org.assignment.fish;
 
-import org.assignment.fish.Fish;
-import org.assignment.fish.Shark;
+import org.assignment.fish.ClownFish;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -12,23 +11,22 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class SharkTest {
+public class ClownTest {
 
     @Test
     public void testSizeColor() {
-        Shark shark = new Shark();
-        assertThat(shark.getSize(), is(equalTo("LARGE")));
-        assertThat(shark.getColor(), is(equalTo("GREY")));
+        ClownFish clownFish = new ClownFish();
+        assertThat(clownFish.getSize(), is(equalTo("SMALL")));
+        assertThat(clownFish.getColor(), is(equalTo("ORANGE")));
     }
 
     @Test
-    public void testEat() throws IOException {
+    public void testCrackJoke() throws IOException {
         OutputStream os = new ByteArrayOutputStream();
         os.write("Testing Sing.".getBytes());
 
-        Shark shark = new Shark();
-        shark.eat(new Fish());
-
+        ClownFish clownFish = new ClownFish();
+        clownFish.crackJoke();
         assertThat(os.toString(), is(equalTo("Testing Sing.")));
     }
 
