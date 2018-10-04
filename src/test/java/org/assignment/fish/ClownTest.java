@@ -1,6 +1,5 @@
 package org.assignment.fish;
 
-import org.assignment.fish.ClownFish;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;

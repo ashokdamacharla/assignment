@@ -1,7 +1,5 @@
 package org.assignment.fish;
 
-import org.assignment.fish.Fish;
-import org.assignment.fish.Shark;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;

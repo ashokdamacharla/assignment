@@ -1,6 +1,5 @@
 package org.assignment.fish;
 
-import org.assignment.fish.Dolphin;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;

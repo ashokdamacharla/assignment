@@ -4,6 +4,10 @@ import org.assignment.Animal;
 
 public class Bird extends Animal {
 
+    public Bird() {
+        this(true, "");
+    }
+
     public Bird(boolean isFlying, String sound) {
         super(isFlying, true, true, false, sound);
     }
