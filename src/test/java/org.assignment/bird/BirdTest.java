@@ -1,5 +1,6 @@
-package org.assignment;
+package org.assignment.bird;
 
+import org.assignment.bird.Bird;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -18,7 +19,7 @@ public class BirdTest {
         os.write("Testing Walk.".getBytes());
         PrintStream stream = new PrintStream(os, true);
 
-        Bird bird = new Bird();
+        Bird bird = new Bird(true, "");
         bird.walk();
 
         assertThat(os.toString(), is(equalTo("Testing Walk.")));
@@ -30,7 +31,7 @@ public class BirdTest {
         os.write("Testing Fly.".getBytes());
         PrintStream stream = new PrintStream(os, true);
 
-        Bird bird = new Bird();
+        Bird bird = new Bird(false, "");
         bird.fly();
 
         assertThat(os.toString(), is(equalTo("Testing Fly.")));
@@ -42,7 +43,7 @@ public class BirdTest {
         os.write("Testing Sing.".getBytes());
         PrintStream stream = new PrintStream(os, true);
 
-        Bird bird = new Bird();
+        Bird bird = new Bird(true, "Test");
         bird.sing();
 
         assertThat(os.toString(), is(equalTo("Testing Sing.")));
